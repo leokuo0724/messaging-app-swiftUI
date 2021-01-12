@@ -11,6 +11,13 @@
 		EBFD569E25AC990800A1C2A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD569D25AC990800A1C2A3 /* ContentView.swift */; };
 		EBFD56A025AC990B00A1C2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFD569F25AC990B00A1C2A3 /* Assets.xcassets */; };
 		EBFD56A325AC990B00A1C2A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFD56A225AC990B00A1C2A3 /* Preview Assets.xcassets */; };
+		EBFD56AC25AC9CAD00A1C2A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD56AB25AC9CAD00A1C2A3 /* HomeView.swift */; };
+		EBFD56B625ACA49B00A1C2A3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD56B525ACA49B00A1C2A3 /* TabBarView.swift */; };
+		EBFD56BB25ACB06F00A1C2A3 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBFD56B825ACB06E00A1C2A3 /* PlusJakartaSans-Medium.ttf */; };
+		EBFD56BC25ACB06F00A1C2A3 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBFD56B925ACB06E00A1C2A3 /* PlusJakartaSans-Regular.ttf */; };
+		EBFD56BD25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBFD56BA25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf */; };
+		EBFD56C425ACB7B700A1C2A3 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD56C325ACB7B700A1C2A3 /* ChatList.swift */; };
+		EBFD56C725ACB7C000A1C2A3 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD56C625ACB7C000A1C2A3 /* ChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		EBFD569F25AC990B00A1C2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFD56A225AC990B00A1C2A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBFD56A425AC990B00A1C2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFD56AB25AC9CAD00A1C2A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBFD56B525ACA49B00A1C2A3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		EBFD56B825ACB06E00A1C2A3 /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		EBFD56B925ACB06E00A1C2A3 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		EBFD56BA25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		EBFD56C325ACB7B700A1C2A3 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		EBFD56C625ACB7C000A1C2A3 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */,
-				EBFD569D25AC990800A1C2A3 /* ContentView.swift */,
+				EBFD56C125ACB15500A1C2A3 /* Views */,
 				EBFD569F25AC990B00A1C2A3 /* Assets.xcassets */,
 				EBFD56A425AC990B00A1C2A3 /* Info.plist */,
+				EBFD56C025ACB14500A1C2A3 /* Resources */,
 				EBFD56A125AC990B00A1C2A3 /* Preview Content */,
 			);
 			path = "messaging-app-swiftUI";
@@ -67,6 +82,28 @@
 				EBFD56A225AC990B00A1C2A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBFD56C025ACB14500A1C2A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD56BA25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf */,
+				EBFD56B825ACB06E00A1C2A3 /* PlusJakartaSans-Medium.ttf */,
+				EBFD56B925ACB06E00A1C2A3 /* PlusJakartaSans-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBFD56C125ACB15500A1C2A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD569D25AC990800A1C2A3 /* ContentView.swift */,
+				EBFD56C325ACB7B700A1C2A3 /* ChatList.swift */,
+				EBFD56C625ACB7C000A1C2A3 /* ChatRow.swift */,
+				EBFD56B525ACA49B00A1C2A3 /* TabBarView.swift */,
+				EBFD56AB25AC9CAD00A1C2A3 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBFD56A325AC990B00A1C2A3 /* Preview Assets.xcassets in Resources */,
+				EBFD56BD25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf in Resources */,
+				EBFD56BC25ACB06F00A1C2A3 /* PlusJakartaSans-Regular.ttf in Resources */,
+				EBFD56BB25ACB06F00A1C2A3 /* PlusJakartaSans-Medium.ttf in Resources */,
 				EBFD56A025AC990B00A1C2A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBFD56C425ACB7B700A1C2A3 /* ChatList.swift in Sources */,
 				EBFD569E25AC990800A1C2A3 /* ContentView.swift in Sources */,
+				EBFD56AC25AC9CAD00A1C2A3 /* HomeView.swift in Sources */,
+				EBFD56B625ACA49B00A1C2A3 /* TabBarView.swift in Sources */,
+				EBFD56C725ACB7C000A1C2A3 /* ChatRow.swift in Sources */,
 				EBFD569C25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
