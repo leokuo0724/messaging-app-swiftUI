@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB65A6A525AF41F100861875 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB65A6A425AF41F100861875 /* Chat.swift */; };
 		EBFD569C25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */; };
 		EBFD569E25AC990800A1C2A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD569D25AC990800A1C2A3 /* ContentView.swift */; };
 		EBFD56A025AC990B00A1C2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFD569F25AC990B00A1C2A3 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB65A6A425AF41F100861875 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		EBFD569825AC990800A1C2A3 /* messaging-app-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "messaging-app-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messaging_app_swiftUIApp.swift; sourceTree = "<group>"; };
 		EBFD569D25AC990800A1C2A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB65A6A325AF41B000861875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB65A6A425AF41F100861875 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EBFD568F25AC990800A1C2A3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 			children = (
 				EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */,
 				EBFD56C125ACB15500A1C2A3 /* Views */,
+				EB65A6A325AF41B000861875 /* Model */,
 				EBFD569F25AC990B00A1C2A3 /* Assets.xcassets */,
 				EBFD56A425AC990B00A1C2A3 /* Info.plist */,
 				EBFD56C025ACB14500A1C2A3 /* Resources */,
@@ -180,6 +191,7 @@
 			files = (
 				EBFD56C425ACB7B700A1C2A3 /* ChatList.swift in Sources */,
 				EBFD569E25AC990800A1C2A3 /* ContentView.swift in Sources */,
+				EB65A6A525AF41F100861875 /* Chat.swift in Sources */,
 				EBFD56AC25AC9CAD00A1C2A3 /* HomeView.swift in Sources */,
 				EBFD56B625ACA49B00A1C2A3 /* TabBarView.swift in Sources */,
 				EBFD56C725ACB7C000A1C2A3 /* ChatRow.swift in Sources */,

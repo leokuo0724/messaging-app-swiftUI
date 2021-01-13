@@ -52,8 +52,11 @@ struct ContentView: View {
                 .frame(width: 302, height: 26, alignment: .leading)
                 .padding(.leading, 16)
                 
+                ChatList()
+                
                 Spacer()
             }
+            // in zstack
             TabBarView()
                 .position(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height-86)
             Button (action: {
