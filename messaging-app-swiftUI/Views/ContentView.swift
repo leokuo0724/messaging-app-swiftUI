@@ -53,6 +53,7 @@ struct ContentView: View {
                 .padding(.leading, 16)
                 
                 ChatList()
+                    .padding(EdgeInsets(top: 12, leading: 8, bottom: 0, trailing: 8))
                 
                 Spacer()
             }
@@ -67,8 +68,10 @@ struct ContentView: View {
                     .frame(width: 24, height: 24, alignment: .center)
             }
             .frame(width: 56, height: 56, alignment: .center)
-            .background(Color("PrimaryColor").shadow(color: Color.init(.sRGB, red: 70/255, green: 96/255, blue: 135/255, opacity: 0.25), radius: 32, x: 0, y: 4))
             .cornerRadius(56/2)
+            .background(Circle()
+                            .foregroundColor(Color.init("PrimaryColor"))
+                            .shadow(color: Color.init(.sRGB, red: 70/255, green: 96/255, blue: 135/255, opacity: 0.25), radius: 32, x: 0, y: 4))
             .offset(x: 80+56, y: 204+56)
         }
     }

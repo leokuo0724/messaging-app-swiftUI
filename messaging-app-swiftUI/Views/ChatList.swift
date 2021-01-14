@@ -18,9 +18,11 @@ var chats: Array<Chat> = [
 public struct ChatList: View {
     
     public var body: some View {
-        VStack(spacing: 12) {
-            List(chats, id: \.self) { chat in
-                ChatRow(chat: chat)
+        ScrollView {
+            VStack(spacing: 12) {
+                ForEach(chats, id: \.self) { chat in
+                    ChatRow(chat: chat)
+                }
             }
         }
     }

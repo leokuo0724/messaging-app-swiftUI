@@ -9,11 +9,20 @@ import SwiftUI
 
 struct ChatRow: View {
     var chat: Chat
+    var rowBackgroundColor: Color {
+        if chat.unReadCount > 0 {
+            return Color.init("PrimaryColor-0.1")
+        } else {
+            return Color.white
+        }
+    }
     
     var body: some View {
         HStack {
             ZStack {
                 Image(chat.avatarImageName)
+                    .resizable()
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .frame(width: 48, height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 OnlineView(onlineStatus: chat.status)
             }
@@ -53,6 +62,7 @@ struct ChatRow: View {
             .padding(.trailing, 8)
         }
         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 359, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 64, maxHeight: 64, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .background(rowBackgroundColor)
         .cornerRadius(8)
     }
 }
