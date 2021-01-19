@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2064FF25B713A200B126B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EB2064FE25B713A100B126B5 /* README.md */; };
 		EB65A6A525AF41F100861875 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB65A6A425AF41F100861875 /* Chat.swift */; };
 		EBFD569C25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */; };
 		EBFD569E25AC990800A1C2A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD569D25AC990800A1C2A3 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB2064FE25B713A100B126B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB65A6A425AF41F100861875 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		EBFD569825AC990800A1C2A3 /* messaging-app-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "messaging-app-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFD569B25AC990800A1C2A3 /* messaging_app_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messaging_app_swiftUIApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		EBFD568F25AC990800A1C2A3 = {
 			isa = PBXGroup;
 			children = (
+				EB2064FE25B713A100B126B5 /* README.md */,
 				EBFD569A25AC990800A1C2A3 /* messaging-app-swiftUI */,
 				EBFD569925AC990800A1C2A3 /* Products */,
 			);
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2064FF25B713A200B126B5 /* README.md in Resources */,
 				EBFD56A325AC990B00A1C2A3 /* Preview Assets.xcassets in Resources */,
 				EBFD56BD25ACB06F00A1C2A3 /* PlusJakartaSans-Bold.ttf in Resources */,
 				EBFD56BC25ACB06F00A1C2A3 /* PlusJakartaSans-Regular.ttf in Resources */,
