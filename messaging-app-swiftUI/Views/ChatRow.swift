@@ -22,8 +22,8 @@ struct ChatRow: View {
             ZStack {
                 Image(chat.avatarImageName)
                     .resizable()
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .frame(width: 48, height: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .clipShape(Circle())
+                    .frame(width: 48, height: 48, alignment: .center)
                 OnlineView(onlineStatus: chat.status)
             }
             .padding(.all, 8)
@@ -49,7 +49,7 @@ struct ChatRow: View {
                         if chat.unReadCount > 0 {
                         Circle()
                             .fill(Color.init("PrimaryColor"))
-                            .frame(width: 24, height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 24, height: 24, alignment: .center)
                         Text("\(chat.unReadCount)")
                             .font(Font.custom("PlusJakartaSans-Bold", size: 12))
                             .foregroundColor(.white)
@@ -58,10 +58,10 @@ struct ChatRow: View {
                 }
                 .frame(minHeight: 24)
             }
-            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 279, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 48, maxHeight: 48, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(minWidth: 0, idealWidth: 279, maxWidth: .infinity, minHeight: 0, idealHeight: 48, maxHeight: 48, alignment: .center)
             .padding(.trailing, 8)
         }
-        .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 359, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 64, maxHeight: 64, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .frame(minWidth: 0, idealWidth: 359, maxWidth: .infinity, minHeight: 0, idealHeight: 64, maxHeight: 64, alignment: .center)
         .background(rowBackgroundColor)
         .cornerRadius(8)
     }
@@ -88,7 +88,7 @@ struct OnlineView: View {
             Circle()
                 .strokeBorder(Color.white, lineWidth: 2)
                 .background(Circle().foregroundColor(statusColor))
-                .frame(width: 12, height: 12, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 12, height: 12, alignment: .center)
                 .offset(CGSize(width: 18, height: 18))
         }        
     }
